@@ -1,1 +1,4 @@
-# Write it!
+GoogleAds/DoNotGetResourceMethods:
+  Description: 'Do not use get methods to fetch resource informations. Use GoogleAdsService.search.'
+  Enabled: true
+  VersionAdded: '0.1'
