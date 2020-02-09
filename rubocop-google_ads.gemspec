@@ -1,28 +1,29 @@
+# frozen_string_literal: true
+
 require_relative 'lib/rubocop/google_ads/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rubocop-google_ads"
+  spec.name          = 'rubocop-google_ads'
   spec.version       = RuboCop::GoogleAds::VERSION
-  spec.authors       = ["hanocha"]
-  spec.email         = ["hanocha.peter@gmail.com"]
+  spec.authors       = ['hanocha']
+  spec.email         = ['hanocha.peter@gmail.com']
 
-  spec.summary       = %q{Custom cops for Google Ads API Ruby Client Library}
-  spec.homepage      = "https://github.com/hanocha/rubocop-google_ads"
-  spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.6.5")
+  spec.summary       = 'Custom cops for Google Ads API Ruby Client Library'
+  spec.homepage      = 'https://github.com/hanocha/rubocop-google_ads'
+  spec.license       = 'MIT'
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.6.5')
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata['homepage_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = spec.homepage
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
+  spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'rubocop'
 end
-
