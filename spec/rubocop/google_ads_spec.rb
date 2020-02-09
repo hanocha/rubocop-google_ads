@@ -1,9 +1,7 @@
-RSpec.describe Rubocop::GoogleAds do
-  it "has a version number" do
-    expect(Rubocop::GoogleAds::VERSION).not_to be nil
-  end
+# frozen_string_literal: true
 
-  it "does something useful" do
-    expect(false).to eq(true)
+RSpec.describe RuboCop::GoogleAds do
+  it 'has a version number' do
+    expect(RuboCop::GoogleAds::VERSION).not_to be nil
   end
 end

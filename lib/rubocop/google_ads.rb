@@ -1,4 +1,7 @@
-require "rubocop/google_ads/version"
+# frozen_string_literal: true
+
+require 'yaml'
+require 'rubocop/google_ads/version'
 
 module RuboCop
   module GoogleAds
@@ -11,4 +14,3 @@ module RuboCop
     private_constant(:CONFIG_DEFAULT, :PROJECT_ROOT)
   end
 end
-
