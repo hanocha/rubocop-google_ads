@@ -1,8 +1,6 @@
 # Rubocop::GoogleAds
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/google_ads`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A RuboCop extension for [Google Ads Client Library for Ruby](https://github.com/googleads/google-ads-ruby).
 
 ## Installation
 
@@ -22,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require it in your `.rubocop.yml`, like below.
+
+```
+require: rubocop-rails
+```
 
 ## Development
 
@@ -32,7 +34,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rubocop-google_ads.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hanocha/rubocop-google_ads.
 
 
 ## License
