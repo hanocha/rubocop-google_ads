@@ -36,6 +36,12 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/hanocha/rubocop-google_ads.
 
+### Update deprecated get methods list
+
+When Google Ads API is updated, maybe we also should to update target deprecated methods information.
+
+You can run `$ bin/deprecated_methods_generator` command, it updates `lib/rubocop/cop/google_ads/deprecated_get_methods.yml` file,
+which is the list of deprecated get methods. Also you can commit it and make a pull request! :)
 
 ## License
 
