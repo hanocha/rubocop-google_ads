@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'google/ads/google_ads'
+client = Google::Ads::GoogleAds::GoogleAdsClient.new {}
+
+methods = client.service.methods
+
+get_methods = []
+
+methods.each do |m|
+  begin
+    get_method_name = client.service.send(m).instance_variables.find { |v| v.to_s.include?('@get_') }
+
+    if get_method_name
+      get_methods << get_method_name
+      puts get_method_name
+    end
+  rescue => e
+    puts "#{m} is not google ads API method. Skipping..."
+  end
+end
+
+File.open('lib/rubocop/cop/google_ads/deprecated_get_methods.yml', 'w') do |f|
+  f.puts YAML.dump(get_methods.map { |m| m.to_s.delete_prefix('@') })
+end
