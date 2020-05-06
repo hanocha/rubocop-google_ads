@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Custom cops for Google Ads API Ruby Client Library'
   spec.homepage      = 'https://github.com/hanocha/rubocop-google_ads'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.6.5')
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
