@@ -1,8 +1,10 @@
 name: Auto update get methods
 
 on:
-  schedule:
-    - cron: '0 * * * *'
+  pull_request:
+    branches:
+      - 'dependabot/bundler/google-ads-googleads-**'
+    types: [opened, reopened]
 
 jobs:
   main:
