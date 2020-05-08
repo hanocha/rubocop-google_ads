@@ -1,4 +1,4 @@
-name: Auto update get methods
+name: Auto update get methods with dependabot
 
 on:
   pull_request:
