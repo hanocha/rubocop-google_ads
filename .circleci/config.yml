@@ -16,3 +16,6 @@ jobs:
           name: Install dependencies
           command: bundle install --path=vendor/bundle
       - ruby/run-tests
+      - run:
+          name: Run rubocop
+          command: bundle exec rubocop
