@@ -74,6 +74,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
+    rspec_junit_formatter (0.4.1)
+      rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (0.82.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -98,6 +100,7 @@ DEPENDENCIES
   pry-byebug
   rake (~> 13.0)
   rspec
+  rspec_junit_formatter
   rubocop-google_ads!
 
 BUNDLED WITH

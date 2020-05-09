@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require 'google/ads/google_ads'
 client = Google::Ads::GoogleAds::GoogleAdsClient.new {}
@@ -15,7 +16,7 @@ methods.each do |m|
       get_methods << get_method_name
       puts get_method_name
     end
-  rescue => e
+  rescue StandardError
     puts "#{m} is not google ads API method. Skipping..."
   end
 end
