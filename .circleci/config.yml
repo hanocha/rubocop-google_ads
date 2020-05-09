@@ -1,0 +1,18 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.2.2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.4
+    executor: ruby/default
+    steps:
+      - checkout
+      - run:
+          name: Update bundler
+          command: gem update bundler
+      - run:
+          name: Install dependencies
+          command: bundle install --path=vendor/bundle
+      - ruby/run-tests
