@@ -20,6 +20,8 @@ methods.each do |m|
   end
 end
 
+get_methods.sort!
+
 File.open('lib/rubocop/cop/google_ads/deprecated_get_methods.yml', 'w') do |f|
   f.puts YAML.dump(get_methods.map { |m| m.to_s.delete_prefix('@') })
 end
