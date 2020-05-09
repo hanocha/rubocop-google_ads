@@ -37,6 +37,7 @@
 - get_change_status
 - get_click_view
 - get_conversion_action
+- get_currency_constant
 - get_custom_interest
 - get_customer
 - get_customer_client
@@ -81,6 +82,7 @@
 - get_mobile_app_category_constant
 - get_mobile_device_constant
 - get_mutate_job
+- get_offline_user_data_job
 - get_operating_system_version_constant
 - get_paid_organic_search_term_view
 - get_parental_status_view
