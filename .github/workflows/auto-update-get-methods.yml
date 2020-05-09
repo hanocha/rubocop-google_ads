@@ -25,7 +25,7 @@ jobs:
       - name: Git commit
         run: |
           git add lib/rubocop/cop/google_ads/deprecated_get_methods.yml && \
-          git commit -m 'Generate new list filr of deprecated get methods'
+          git commit -m 'Generate new list file of deprecated get methods'
       - name: Push commit
         if: ${{ success() }}
         run: git push
