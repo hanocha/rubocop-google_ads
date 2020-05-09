@@ -18,14 +18,11 @@ jobs:
         run: bundle install
       - name: Generate new list file of deprecated get methods
         run: bin/deprecated_methods_generator
-      - name: Configure git
+      - name: Check diff, commit and push
         run: |
-          git config --local user.email "test@example.com" && \
-          git config --local user.name "A GitHub Actions test account"
-      - name: Git commit
-        run: |
-          git add lib/rubocop/cop/google_ads/deprecated_get_methods.yml && \
-          git commit -m 'Generate new list file of deprecated get methods'
-      - name: Push commit
-        if: ${{ success() }}
-        run: git push
+          git config --local user.email "hanocha.peter@gmail.com"
+          git config --local user.name "hanocha"
+          git add lib/rubocop/cop/google_ads/deprecated_get_methods.yml
+          if git commit -m 'Generate new list file of deprecated get methods'; then
+            git push
+          fi
