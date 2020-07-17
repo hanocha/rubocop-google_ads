@@ -1,6 +1,7 @@
 ---
 - get_account_budget
 - get_account_budget_proposal
+- get_account_link
 - get_ad
 - get_ad_group
 - get_ad_group_ad
@@ -19,6 +20,7 @@
 - get_ad_schedule_view
 - get_age_range_view
 - get_asset
+- get_batch_job
 - get_bidding_strategy
 - get_billing_setup
 - get_campaign
@@ -66,11 +68,12 @@
 - get_group_placement_view
 - get_hotel_group_view
 - get_hotel_performance_view
+- get_income_range_view
 - get_keyword_plan
 - get_keyword_plan_ad_group
+- get_keyword_plan_ad_group_keyword
 - get_keyword_plan_campaign
-- get_keyword_plan_keyword
-- get_keyword_plan_negative_keyword
+- get_keyword_plan_campaign_keyword
 - get_keyword_view
 - get_label
 - get_landing_page_view
@@ -81,7 +84,6 @@
 - get_merchant_center_link
 - get_mobile_app_category_constant
 - get_mobile_device_constant
-- get_mutate_job
 - get_offline_user_data_job
 - get_operating_system_version_constant
 - get_paid_organic_search_term_view
@@ -94,6 +96,7 @@
 - get_shared_criterion
 - get_shared_set
 - get_shopping_performance_view
+- get_third_party_app_analytics_link
 - get_topic_constant
 - get_topic_view
 - get_user_interest
