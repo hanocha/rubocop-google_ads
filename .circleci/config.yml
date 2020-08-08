@@ -9,13 +9,6 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
-      - run:
-          name: Update bundler
-          command: gem update bundler
-      - run:
-          name: Install dependencies
-          command: bundle install --path=vendor/bundle
-      - ruby/run-tests
-      - run:
-          name: Run rubocop
-          command: bundle exec rubocop
+      - ruby/install-deps
+      - ruby/rspec-test
+      - ruby/rubocop-check
