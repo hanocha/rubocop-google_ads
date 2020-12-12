@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-google_ads (0.1.0)
+    rubocop-google_ads (1.0.0)
       rubocop
 
 GEM
@@ -25,6 +25,7 @@ GEM
       grpc (~> 1.24)
       rly (~> 0.2.3)
     google-protobuf (3.11.4)
+    google-protobuf (3.11.4-x86_64-linux)
     googleapis-common-protos (1.3.10)
       google-protobuf (~> 3.11)
       googleapis-common-protos-types (>= 1.0.5, < 2.0)
@@ -41,14 +42,17 @@ GEM
     grpc (1.28.0)
       google-protobuf (~> 3.11)
       googleapis-common-protos-types (~> 1.0)
+    grpc (1.28.0-x86_64-linux)
+      google-protobuf (~> 3.11)
+      googleapis-common-protos-types (~> 1.0)
     jwt (2.2.1)
     memoist (0.16.2)
     method_source (1.0.0)
     multi_json (1.15.0)
     multipart-post (2.1.1)
     os (1.1.0)
-    parallel (1.19.2)
-    parser (2.7.1.4)
+    parallel (1.20.1)
+    parser (2.7.2.0)
       ast (~> 2.4.1)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -59,7 +63,7 @@ GEM
     public_suffix (4.0.5)
     rainbow (3.0.0)
     rake (13.0.1)
-    regexp_parser (1.7.1)
+    regexp_parser (2.0.0)
     rexml (3.2.4)
     rly (0.2.3)
     rspec (3.9.0)
@@ -77,17 +81,17 @@ GEM
     rspec-support (3.9.2)
     rspec_junit_formatter (0.4.1)
       rspec-core (>= 2, < 4, != 2.12.0)
-    rubocop (0.89.1)
+    rubocop (1.6.1)
       parallel (~> 1.10)
-      parser (>= 2.7.1.1)
+      parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.7)
+      regexp_parser (>= 1.8, < 3.0)
       rexml
-      rubocop-ast (>= 0.3.0, < 1.0)
+      rubocop-ast (>= 1.2.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.3.0)
-      parser (>= 2.7.1.4)
+    rubocop-ast (1.3.0)
+      parser (>= 2.7.1.5)
     ruby-progressbar (1.10.1)
     signet (0.14.0)
       addressable (~> 2.3)
@@ -98,6 +102,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   google-ads-googleads
@@ -108,4 +113,4 @@ DEPENDENCIES
   rubocop-google_ads!
 
 BUNDLED WITH
-   2.1.4
+   2.2.0
