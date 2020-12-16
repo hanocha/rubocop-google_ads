@@ -10,7 +10,12 @@ get_methods = []
 
 methods.each do |m|
   begin
-    get_method_name = client.service.send(m).instance_variables.find { |v| v.to_s.include?('@get_') }
+    get_method_name = client
+                      .service
+                      .send(m)
+                      .send(:service)
+                      .public_methods
+                      .find { |v| v.start_with?('get_') }
 
     if get_method_name
       get_methods << get_method_name
