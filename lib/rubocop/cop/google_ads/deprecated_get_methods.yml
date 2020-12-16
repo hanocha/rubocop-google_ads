@@ -24,6 +24,7 @@
 - get_bidding_strategy
 - get_billing_setup
 - get_campaign
+- get_campaign_asset
 - get_campaign_audience_view
 - get_campaign_bid_modifier
 - get_campaign_budget
