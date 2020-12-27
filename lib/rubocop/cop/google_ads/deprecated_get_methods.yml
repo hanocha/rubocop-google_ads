@@ -39,8 +39,10 @@
 - get_carrier_constant
 - get_change_status
 - get_click_view
+- get_combined_audience
 - get_conversion_action
 - get_currency_constant
+- get_custom_audience
 - get_custom_interest
 - get_customer
 - get_customer_client
@@ -50,6 +52,7 @@
 - get_customer_label
 - get_customer_manager_link
 - get_customer_negative_criterion
+- get_customer_user_access
 - get_detail_placement_view
 - get_display_keyword_view
 - get_distance_view
@@ -59,6 +62,8 @@
 - get_extension_feed_item
 - get_feed
 - get_feed_item
+- get_feed_item_set
+- get_feed_item_set_link
 - get_feed_item_target
 - get_feed_mapping
 - get_feed_placeholder_view
