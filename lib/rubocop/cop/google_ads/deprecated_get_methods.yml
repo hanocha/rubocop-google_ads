@@ -53,6 +53,7 @@
 - get_customer_manager_link
 - get_customer_negative_criterion
 - get_customer_user_access
+- get_customer_user_access_invitation
 - get_detail_placement_view
 - get_display_keyword_view
 - get_distance_view
