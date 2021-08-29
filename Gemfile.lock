@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-google_ads (1.0.0)
+    rubocop-google_ads (2.0.0)
       rubocop
 
 GEM
